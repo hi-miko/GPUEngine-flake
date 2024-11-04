@@ -55,13 +55,6 @@
                 unstable-pkgs.glm
                 pkgs.qt5Full
                 pkgs.assimp
-
-
-                pkgs.glfw
-                pkgs.mesa
-                pkgs.libGL
-                pkgs.libGLU
-                pkgs.openscenegraph
             ];
 
             # packages defined here will only be avaiable at build phases and not at runtime
@@ -92,12 +85,12 @@
 
             # Install docs
             postInstall = ''
+                mkdir -p $docs
                 cd ..
                 doxygen $src/Doxyfile
                 cp -r doc/* $docs
             '';
 
-                # mkdir -p $examples $tests $docs
                 # cd tests/
                 # make -j8 VERBOSE=1 >&2
                 # ls -R ./ >&2
