@@ -1,0 +1,8 @@
+18a19,20
+> #define QTIMAGELOADER_EXPORT __attribute__((visibility("default")))
+> 
+40c42
+< };
+\ No newline at end of file
+---
+> };

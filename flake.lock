@@ -1,0 +1,118 @@
+{
+  "nodes": {
+    "AssimpModelLoader-patch": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1730390187,
+        "narHash": "sha256-DMeW8+ZVYe83G+iRlyhbd1oC7m1lQ1qyFtMBoS6qun4=",
+        "path": "/home/kimo/Code/Nix/Flakes/GPUEngine-flake/AssimpModelLoader.patch",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/kimo/Code/Nix/Flakes/GPUEngine-flake/AssimpModelLoader.patch",
+        "type": "path"
+      }
+    },
+    "OpenGLFunctionLoader-patch": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1730378794,
+        "narHash": "sha256-toKa4Gm+4172fPOm1pxWio47s8RYDGySgO+29+V9UiQ=",
+        "path": "/home/kimo/Code/Nix/Flakes/GPUEngine-flake/linux_OpenGLFunctionLoader.patch",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/kimo/Code/Nix/Flakes/GPUEngine-flake/linux_OpenGLFunctionLoader.patch",
+        "type": "path"
+      }
+    },
+    "QtImageLoader-patch": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1730384071,
+        "narHash": "sha256-UdiflBJth2ypGjzMf1RkVcpXu6qmLGB+7DyK4hOTx6o=",
+        "path": "/home/kimo/Code/Nix/Flakes/GPUEngine-flake/QtImageLoader.patch",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/kimo/Code/Nix/Flakes/GPUEngine-flake/QtImageLoader.patch",
+        "type": "path"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1730327045,
+        "narHash": "sha256-xKel5kd1AbExymxoIfQ7pgcX6hjw9jCgbiBjiUfSVJ8=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "080166c15633801df010977d9d7474b4a6c549d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-24.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1729256560,
+        "narHash": "sha256-/uilDXvCIEs3C9l73JTACm4quuHUsIHcns1c+cHUJwA=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "4c2fcb090b1f3e5b47eaa7bd33913b574a11e0a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "AssimpModelLoader-patch": "AssimpModelLoader-patch",
+        "OpenGLFunctionLoader-patch": "OpenGLFunctionLoader-patch",
+        "QtImageLoader-patch": "QtImageLoader-patch",
+        "nixpkgs": "nixpkgs",
+        "ste": "ste",
+        "unstable": "unstable"
+      }
+    },
+    "ste": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1730471142,
+        "narHash": "sha256-SuffvtX8cuaKvzQIYXGkc+SF6Eu0NM3UDlSELf4j4tk=",
+        "path": "/home/kimo/Code/Nix/Flakes/ste-flake/",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/kimo/Code/Nix/Flakes/ste-flake/",
+        "type": "path"
+      }
+    },
+    "unstable": {
+      "locked": {
+        "lastModified": 1730200266,
+        "narHash": "sha256-l253w0XMT8nWHGXuXqyiIC/bMvh1VRszGXgdpQlfhvU=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "807e9154dcb16384b1b765ebe9cd2bba2ac287fd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

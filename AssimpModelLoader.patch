@@ -1,0 +1,7 @@
+39a40
+> #define ASSIMPMODELLOADER_EXPORT __attribute__((visibility("default")))
+109c110
+< };
+\ No newline at end of file
+---
+> };
