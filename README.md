@@ -7,7 +7,7 @@ For this flake to work you need the [ste flake](https://github.com/hi-miko/ste-f
 ## Description
 
 This is a working nix flake for the GPUEngine [repository](https://github.com/Rendering-FIT/GPUEngine).
-It compiles GPUEngine and links the GPUEngine library and also creates it's documentation.
+It compiles GPUEngine and links the GPUEngine library.
 
 I have also included 3 patches that need to be applied for the code to actually compile on linux, these patches don't change
 the behavior of the code, 1 adds the `cstdint` library where it's needed and the other 2 add library class visibility to default via a macro,
